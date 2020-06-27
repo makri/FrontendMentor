@@ -1,0 +1,73 @@
+a {
+  color: #cb3737;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ee6f57;
+}
+
+body {
+  margin: 0;
+  font-family: Merriweather, serif;
+  color: #CE5C60 ;
+  text-align: center;
+background-color:  #fafafa;
+}
+
+h1 {
+  font-family: Sacramento, cursive;
+  font-size: 4.652rem;
+  margin:auto;
+  padding:3rem 0 3rem 0;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.652rem;
+  margin:auto;
+  color: #2B3950;
+}
+h3{
+  font-weight: lighter;
+  color: #525A6F ;
+}
+
+hr{
+  border: dotted #e3e3e3 5px;
+  border-bottom: none;
+  width: 5%;
+}
+p {
+  line-height: 2;
+}
+
+.header-section {
+  text-align: center;
+  margin: 0 0 4rem 0;
+}
+
+.land-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5%;
+  text-align: center;
+  border-top:#CE5C60 ;
+  border-top-style: solid;
+  border-width: thick;
+  background-color: #fafafa;
+  margin:1rem 1rem 1rem 1rem;
+}
+
+.card-img{
+  height: 10rem;
+  width: 10rem;
+}
+
+.card-description {
+  padding-left: 2rem;
+  text-align: center;
+}

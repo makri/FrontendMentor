@@ -12,6 +12,8 @@ h1{
 }
 h3{
   color:hsl(234, 12%, 34%);
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .heading1 {
@@ -19,7 +21,7 @@ h3{
   color: hsl(229, 6%, 66%);
 }
 
-.heading1 {
+.heading2 {
   font-weight: 600;
   color:hsl(234, 12%, 34%);
 }
@@ -28,7 +30,6 @@ h3{
   font-weight: 600;
   font-stretch:extra-condensed;
   color: hsl(229, 6%, 66%);
-  font-size: 0.95rem;
 }
 .card{
   border-radius: 3%;
