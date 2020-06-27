@@ -32,12 +32,15 @@ h3{
   color: hsl(229, 6%, 66%);
 }
 .card{
-  border-radius: 3%;
-  border-style:outset;
-  border-width:thick;
-  box-shadow:2px 2px 3px  hsl(229, 6%, 66%);
-  border-color: hsl(0, 0%, 98%);
-  width:20%;
+  box-shadow: 0 4px 8px 0 hsl(229, 6%, 66%);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5%;
+  border-top-style: solid;
+  border-width: thick;
+  background-color: #fafafa;
+  margin:1rem 1rem 1rem 1rem;
+  padding:2rem 2rem 2rem 2 rem;
   font-size: 0.80rem;
   font-weight: 600;
 }
