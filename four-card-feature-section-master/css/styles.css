@@ -41,7 +41,7 @@ h3 {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   margin: 6rem 8rem 8rem 6rem;
 }
 
