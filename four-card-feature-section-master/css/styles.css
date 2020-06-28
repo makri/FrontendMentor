@@ -44,6 +44,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 3rem auto 3rem auto;
+
 }
 
 .card {
@@ -63,7 +64,7 @@ h3 {
 
 #card1 {
   border-top-color: hsl(0, 78%, 62%);
-  grid-area: 2/1/4/2;
+  grid-area: 2/1/span 2/span 1;
 
 }
 
@@ -81,7 +82,7 @@ h3 {
 
 #card4 {
   border-top-color: hsl(212, 86%, 64%);
-  grid-area: 2/3/4/4;
+  grid-area: 2/3/span 2/span 1;
 
 }
 
@@ -100,4 +101,7 @@ h3 {
 }
 .footer-div{
   margin:8rem 0 0 0;
+}
+@@media query {
+
 }
