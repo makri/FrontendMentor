@@ -36,46 +36,53 @@ h3 {
 }
 
 .container {
+  height: 50vh;
+  width: 80vh;
   display: grid;
-  height: 70vh;
-  width:50vh;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
   grid-template-areas:
     "card1 card2 card4"
     "card1 card3 card4";
-    grid-gap:0.5rem;
-    margin:0 auto 0 auto;
+  margin: 3rem auto 3rem auto;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 hsl(229, 6%, 66%);
   transition: 0.3s;
-  width: 20%;
   border-radius: 5%;
+  background-color: #fafafa;
   border-top-style: solid;
   border-width: thick;
-  background-color: #fafafa;
-  margin: 2rem 1rem 2rem 1rem;
-  padding: 2rem 2rem 2rem 2 rem;
+  overflow: hidden;
   font-size: 0.80rem;
   font-weight: 600;
+  white-space: nowrap;
+  text-align: left;
+  padding:0 0 0 1rem;
 }
 
-.card1 {
+#card1 {
   border-top-color: hsl(0, 78%, 62%);
+  grid-area:card1;
+  margin:8rem 0 8rem 0;
 }
 
-.card2 {
+#card2 {
   border-top-color: hsl(180, 62%, 55%);
+    grid-area:card2;
 }
 
-.card3 {
+#card3 {
   border-top-color: hsl(34, 97%, 64%);
+    grid-area:card3;
 }
 
-.card4 {
+#card4 {
   border-top-color: hsl(212, 86%, 64%);
+    grid-area:card4;
+    margin:8rem 0 8rem 0;
 }
 
 .card-img {
