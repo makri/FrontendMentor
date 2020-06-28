@@ -66,6 +66,7 @@ h3 {
 #card1 {
   border-top-color: hsl(0, 78%, 62%);
   grid-area:card1;
+  /* To push supervisor card to vertical center */
   margin:8rem 0 8rem 0;
 }
 
@@ -82,6 +83,7 @@ h3 {
 #card4 {
   border-top-color: hsl(212, 86%, 64%);
     grid-area:card4;
+    /* To push calculator card to vertical center */
     margin:8rem 0 8rem 0;
 }
 
@@ -91,7 +93,7 @@ h3 {
 
 .icon-img {
   margin: 0;
-  padding-right: 2rem;
+  padding:3rem 2rem;
 }
 
 .body-p {
