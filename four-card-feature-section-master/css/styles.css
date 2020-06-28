@@ -30,21 +30,19 @@ h3 {
 }
 
 .heading3 {
-  font-weight: 600;
-  font-stretch: extra-condensed;
+  font-weight: 400;
+  font-stretch:  ultra-condensed;
   color: hsl(229, 6%, 66%);
+  white-space: nowrap;
 }
 
 .container {
   height: 50vh;
-  width: 80vh;
+  width: 100vh;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
-  grid-template-areas:
-    "card1 card2 card4"
-    "card1 card3 card4";
   margin: 3rem auto 3rem auto;
 }
 
@@ -60,31 +58,31 @@ h3 {
   text-align: left;
   transition: 0.3s;
   white-space: nowrap;
-  padding:0 0 0 1rem;
+  padding: 0 0 0 1rem;
 }
 
 #card1 {
   border-top-color: hsl(0, 78%, 62%);
-  grid-area:card1;
-  /* To push supervisor card to vertical center */
-  margin:8rem 0 8rem 0;
+  grid-area: 2/1/4/2;
+  margin:0 1rem 1rem 1rem;
 }
 
 #card2 {
   border-top-color: hsl(180, 62%, 55%);
-    grid-area:card2;
+  grid-area: 1/2/3/3;
+  margin:0 1rem 1rem 1rem;
 }
 
 #card3 {
   border-top-color: hsl(34, 97%, 64%);
-    grid-area:card3;
+  grid-area: 3/2/5/3;
+    margin:1rem 1rem 0 1rem;
 }
 
 #card4 {
   border-top-color: hsl(212, 86%, 64%);
-    grid-area:card4;
-    /* To push calculator card to vertical center */
-    margin:8rem 0 8rem 0;
+  grid-area: 2/3/4/4;
+    margin:0 1rem 1rem 1rem;
 }
 
 .card-img {
@@ -93,7 +91,7 @@ h3 {
 
 .icon-img {
   margin: 0;
-  padding:3rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .body-p {
