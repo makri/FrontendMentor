@@ -1,0 +1,316 @@
+body {
+  color: #40514E;
+  margin: 0;
+  padding:0;
+  font-family: 'Merriweather', serif;
+}
+*{
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2f2519;
+  font-family: 'Noto Serif', serif;
+  Font-size: 2rem;
+  font-weight: normal;
+}
+
+.header {
+  display:flex;
+  flex-wrap: wrap;
+  /* height: 8.5rem; */
+  padding: 1rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+}
+
+.brand {
+  flex:50%;
+
+}
+
+#main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ffbd69, #fa7d09, #ff4301, #ff0000);
+  background: -moz-linear-gradient(#ffbd69, #fa7d09, #ff4301, #ff0000);
+  background: -ms-linear-gradient(#ffbd69, #fa7d09, #ff4301, #ff0000);
+  background: -o-linear-gradient(#ffbd69, #fa7d09, #ff4301, #ff0000);
+  background: linear-gradient(#ffbd69, #fa7d09, #ff4301, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-family: 'Noto Serif', serif;
+}
+
+#tag-line {
+  color: #4a3f35;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+
+.search-box {
+  flex:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  background: #e4e3e3;
+  /* height: 5rem; */
+  padding:1.2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.search-textbox {
+  height: 2rem;
+  width: 15rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-color: white;
+  float: left;
+  padding: 0.2rem;
+  font-size: 1rem;
+  color: #204051;
+  margin: 1rem;
+  background: white url(../images/search.png) right center no-repeat;
+}
+
+.submit-btn {
+  background: linear-gradient(#4a3f35, #2f2519, #272121);
+  background: -webkit-linear-gradient(#4a3f35, #2f2519);
+  background: -moz-linear-gradient(#4a3f35, #2f2519);
+  background: -o-linear-gradient(#4a3f35, #2f2519);
+  background: -ms-linear-gradient(#4a3f35, #2f2519);
+  color: #fa7d09;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #4a3f35;
+  -webkit-border-color: #4a3f35;
+  -moz-border-color: #4a3f35;
+  -o-border-color: #4a3f35;
+  -ms-border-color: #4a3f35;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  font-weight: bold;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.submit-btn:hover {
+  background: #fa7d09;
+  color: #2f2519;
+  border-color: #fa7d09;
+  -webkit-border-color: #fa7d09;
+  -o-border-color: #4a3f35;
+  -moz-border-color: #4a3f35;
+  -ms-border-color: #4a3f35;
+}
+
+.content-menu {
+  height: 5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: linear-gradient(#4a3f35, #2f2519, #272121);
+  background: -webkit-linear-gradient(#4a3f35, #2f2519);
+  background: -moz-linear-gradient(#4a3f35, #2f2519);
+  background: -o-linear-gradient(#4a3f35, #2f2519);
+  background: -ms-linear-gradient(#4a3f35, #2f2519);
+  padding: 1rem 0;
+}
+
+.content-menu ul {
+  list-style: none;
+}
+
+.content-menu ul li {
+  float: left;
+  margin-left: 2rem;
+  padding: 0 1.5rem;
+  border-right: 1px solid #fa7d09;
+}
+
+.content-menu ul li:last-child {
+  border-right: none;
+}
+
+.content-menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fa7d09;
+  height: 1.8rem;
+  line-height: 2rem;
+  transition: font-size 0.5s ease;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s linear;
+  -o-transition: font-size 0.5s linear;
+  -ms-transition: font-size 0.5s linear;
+}
+
+.content-menu ul li a:hover, .active {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.introduction {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(white, #e4e3e3);
+  -webkit-background: linear-gradient(white, #e4e3e3);
+  -moz-background: linear-gradient(white, #e4e3e3);
+  -o-background: linear-gradient(white, #e4e3e3);
+  -ms-background: linear-gradient(white, #e4e3e3);
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.introduction h2 {
+  padding: 2rem 0;
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  color: #2f2519;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+#mak {
+  font-weight: bold;
+}
+
+.left-sidebar {
+  float: left;
+  line-height: 1.9rem;
+}
+
+.left-sidebar ul li {
+  /* list-style: outside url(../images/arrow.png); */
+  background: url(../images/arrow.png) no-repeat left center;
+}
+
+.right-sidebar {
+  float: right;
+  line-height: 3rem;
+}
+
+.right-sidebar ul li {
+  /* list-style: outside url(../images/tick.png); */
+  background: url(../images/tick.png) no-repeat left center;
+}
+
+.sidebar {
+  width: 45%;
+  height: 45rem;
+  border: 1px solid #2f2519;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 1rem;
+  color: #2f2519;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.sidebar h2 {
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f2519;
+  transition: font-size 0.5s ease;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s linear;
+  -o-transition: font-size 0.5s linear;
+  -ms-transition: font-size 0.5s linear;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.my-footer {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffbd69;
+  padding: 1rem;
+  background: linear-gradient(#4a3f35, #2f2519, #272121);
+  -webkit-background: linear-gradient(#4a3f35, #2f2519);
+  -moz-background: linear-gradient(#4a3f35, #2f2519);
+  -o-background: linear-gradient(#4a3f35, #2f2519);
+  -ms-background: linear-gradient(#4a3f35, #2f2519);
+  margin: 2rem 0;
+}
+
+.my-footer div h6 {
+  font-style: bold;
+}
+
+.my-footer p {
+  font-size: 0.7rem;
+  font-weight: 100;
+  font-stretch: semi-expanded;
+}
+
+.credits {
+  float: left;
+  text-align: left;
+}
+
+.connect {
+  text-align: left;
+  float: right;
+}
+
+.connect img {
+  border-radius: 50%;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.credits a {
+  text-decoration: none;
+  color: #fa7d09;
+}
+
+.copyright {
+  clear: both;
+  text-align: center;
+}
+
+.spacer {
+  clear: both;
+}
