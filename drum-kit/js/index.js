@@ -1,34 +1,47 @@
+
+//Handling button Clicks
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.getElementsByClassName("drum")[i].addEventListener("click", function() {
     addSound(this.innerText);
   })
 }
-
-document.addEventListener("keypress", function() {
+// Handling keypress
+document.addEventListener("keydown", function() {
   addSound(event.key);
 })
 
-function addSound(myChar) {
-  if (myChar === 'w') {
-    var audio = new Audio("sounds/tom-1.mp3");
-    audio.play();
-  } else if (myChar === 'a') {
-    var audio = new Audio("sounds/tom-2.mp3");
-    audio.play();
-  } else if (myChar === 's') {
-    var audio = new Audio("sounds/tom-3.mp3");
-    audio.play();
-  } else if (myChar === 'd') {
-    var audio = new Audio("sounds/tom-4.mp3");
-    audio.play();
-  } else if (myChar === 'j') {
-    var audio = new Audio("sounds/snare.mp3");
-    audio.play();
-  } else if (myChar === 'k') {
-    var audio = new Audio("sounds/crash.mp3");
-    audio.play();
-  } else if (myChar === 'l') {
-    var audio = new Audio("sounds/kick-bass.mp3");
-    audio.play();
+function addSound(currentKey) {
+  switch (currentKey) {
+    case "w":
+      var tom1 = new Audio("sounds/tom-1.mp3");
+      tom1.play();
+      break;
+    case "a":
+      var tom2 = new Audio("sounds/tom-2.mp3");
+      tom2.play();
+      break;
+    case "s":
+      var tom3 = new Audio("sounds/tom-3.mp3");
+      tom3.play();
+      break;
+    case "d":
+      var tom4 = new Audio("sounds/tom-4.mp3");
+      tom4.play();
+      break;
+    case "j":
+      var snare = new Audio("sounds/snare.mp3");
+      snare.play();
+      break;
+    case "k":
+      var crash = new Audio("sounds/crash.mp3");
+      crash.play();
+      break;
+    case "l":
+      var kickBass = new Audio("sounds/kick-bass.mp3");
+      kickBass.play();
+      break;
+    default:
+      break;
   }
+
 }
