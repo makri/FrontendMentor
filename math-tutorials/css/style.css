@@ -158,9 +158,9 @@ h2 {
   line-height: 2rem;
   transition: font-size 0.5s ease;
   -webkit-transition: font-size 0.5s ease;
-  -moz-transition: font-size 0.5s linear;
-  -o-transition: font-size 0.5s linear;
-  -ms-transition: font-size 0.5s linear;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  -ms-transition: font-size 0.5s ease;
 }
 
 .content-menu ul li a:hover, .active {
